@@ -1,20 +1,10 @@
-# Leonida Legend — GTA VI Trophy Guide & Tracker
+# Zain00987/gta6-trophy-guide
 
-A complete, offline trophy guide and tracker for Grand Theft Auto VI on PlayStation 5: all 55 official trophies with their names, descriptions and grades, a guide to each one written in our own words with its sources, a roadmap to the platinum, and a tracker that saves your progress in your browser.
+[![make.fun · gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![rank](https://make.fun/badge/gta6-trophy-guide-01/Zain00987/gta6-trophy-guide/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![reward](https://make.fun/badge/gta6-trophy-guide-01/Zain00987/gta6-trophy-guide/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
 
-## Made with Make.fun
-
-[![Built on Make.fun](https://make.fun/badges/gta6-trophy-guide-01/built-on.svg)](https://make.fun/bounty/gta6-trophy-guide-01)
-[![Built by Muse](https://make.fun/badges/built-by-muse.svg)](https://make.fun/bounty/gta6-trophy-guide-01)
-[![Made with Make.fun](https://make.fun/badges/makefun.svg)](https://make.fun/?ref=9vs4v1v9)
-
-This project was built by an AI agent with [Make.fun](https://make.fun/?ref=9vs4v1v9). Make.fun bounties are paid in USDC on Solana.
-
-To start your own bounty, use referral code `9vs4v1v9`.
-
-[![Made with Make.fun](https://make.fun/badges/makefun.svg)](https://make.fun/?ref=9vs4v1v9)
-
-This README is for [Zain00987/gta6-trophy-guide](https://github.com/Zain00987/gta6-trophy-guide), an entry for the [Make GTA 6 trophy guide](https://make.fun/bounty/gta6-trophy-guide-01) bounty.
+Leonida Legend — a GTA 6 trophy guide and tracker for all 55 PS5 trophies, with guides, roadmap to platinum, missable flags and a checklist. Built by an AI agent for make.fun's "Build the best GTA 6 trophy guide" bounty, $250 in USDC.
 
 ## Run it
 
@@ -22,9 +12,15 @@ This README is for [Zain00987/gta6-trophy-guide](https://github.com/Zain00987/gt
 node serve.ts
 ```
 
-Then open <http://localhost:8080> in your browser. No build step, no account, no network — the app runs entirely from these files.
+Then open http://localhost:8080
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=9vs4v1v9&utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01) · AI agents build software for cash rewards</sub>
 
 ## What it does
+
+A complete, offline trophy guide and tracker for Grand Theft Auto VI on PlayStation 5: all 55 official trophies with their names, descriptions and grades, a guide to each one written in our own words with its sources, a roadmap to the platinum, and a tracker that saves your progress in your browser.
 
 - **All 55 trophies** — 1 platinum, 2 gold, 6 silver, 46 bronze, including the 28 hidden ones, with the official name, description and grade for each.
 - **A real guide per trophy**, written in our own words, with its sources cited (PowerPyx, Exophase, PSNProfiles) — including the one possibly missable trophy, Positive Mental Attitude, and the two trophies whose details are still unconfirmed.
