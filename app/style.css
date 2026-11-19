@@ -1,0 +1,93 @@
+/* Leonida Legend — a dark Vice City look of our own: deep purple nights,
+   neon pink and teal accents, system fonts only, no images, no network. */
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0; background: #0d0a1a; color: #f2eef7; line-height: 1.5;
+}
+.hero {
+  display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between;
+  padding: 28px 24px 20px;
+  background: linear-gradient(135deg, #2a0a4a 0%, #7a0e5e 55%, #0e4a5e 100%);
+  border-bottom: 3px solid #ff2e88;
+}
+.hero-text { max-width: 640px; }
+.eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: 12px; color: #00e5c0; margin: 0 0 8px; }
+h1 { font-size: 34px; line-height: 1.15; margin: 0 0 10px; }
+.lede { color: #e8ddf5; margin: 0 0 8px; max-width: 720px; }
+.progress-box { min-width: 300px; max-width: 420px; background: rgba(0, 0, 0, 0.35); border-radius: 12px; padding: 16px; }
+#progress-text { font-weight: 700; font-size: 18px; margin: 0 0 8px; }
+.progress-bar { height: 14px; background: #241a3d; border-radius: 7px; overflow: hidden; }
+#progress-fill { height: 100%; width: 0; background: linear-gradient(90deg, #ff2e88, #ff9a3d); transition: width 0.3s; }
+.counts { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 6px; }
+.count-chip { background: #241a3d; border: 1px solid #4a3670; border-radius: 20px; padding: 3px 10px; font-size: 12px; }
+.count-chip.warn { border-color: #ff9a3d; color: #ffcf9a; }
+.platinum-note { font-size: 12px; color: #cfc3e8; margin: 0; }
+
+.tabs { display: flex; gap: 8px; padding: 14px 24px 0; }
+.tab {
+  background: #1c1335; color: #f2eef7; border: 1px solid #4a3670;
+  border-radius: 8px 8px 0 0; padding: 10px 18px; font-size: 15px; cursor: pointer;
+}
+.tab.active { background: #ff2e88; border-color: #ff2e88; font-weight: 700; }
+main { padding: 0 24px 24px; }
+.pane { display: none; padding-top: 16px; }
+.pane.active { display: block; }
+h2 { font-size: 24px; margin: 4px 0 8px; }
+h3 { font-size: 17px; margin: 0 0 4px; }
+
+.controls { display: flex; flex-wrap: wrap; gap: 14px; align-items: end; margin: 4px 0 12px; }
+.controls label { font-size: 13px; color: #cfc3e8; display: flex; flex-direction: column; gap: 4px; }
+.controls label.check { flex-direction: row; align-items: center; gap: 6px; color: #f2eef7; }
+.controls input[type="search"], .controls select {
+  background: #1c1335; color: #f2eef7; border: 1px solid #4a3670; border-radius: 6px; padding: 8px 10px; font-size: 14px;
+}
+.controls input[type="search"] { width: 240px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 14px; }
+.actions button, .guide-btn {
+  background: #00b39a; color: #06231d; border: none; border-radius: 6px; padding: 9px 14px; font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.actions button:hover, .guide-btn:hover { background: #00e5c0; }
+.import { font-size: 14px; color: #cfc3e8; cursor: pointer; }
+.import input { font-size: 12px; }
+.hint { font-size: 13px; color: #cfc3e8; margin: 0; }
+
+.list { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 12px; }
+.card {
+  display: flex; gap: 10px; align-items: flex-start;
+  background: #17102b; border: 1px solid #3a2a63; border-radius: 10px; padding: 12px;
+}
+.card.earned { border-color: #00b39a; background: #122b26; }
+.card input[type="checkbox"] { width: 20px; height: 20px; margin-top: 2px; accent-color: #00e5c0; flex-shrink: 0; }
+.card-main { flex: 1; min-width: 0; }
+.card-main h3 { font-size: 15px; }
+.desc { font-size: 13px; color: #cfc3e8; margin: 0 0 8px; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px; }
+.grade { border-radius: 4px; padding: 2px 8px; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+.grade-platinum { background: #e8f6ff; color: #0a3a5c; }
+.grade-gold { background: #ffd34d; color: #4a3200; }
+.grade-silver { background: #d7dce3; color: #26313d; }
+.grade-bronze { background: #d98a4b; color: #3d1f00; }
+.kind, .stage-tag { font-size: 11px; color: #b9a8d8; border: 1px solid #4a3670; border-radius: 10px; padding: 2px 8px; }
+.guide-btn { flex-shrink: 0; padding: 7px 12px; }
+.guide-btn:disabled { background: #3a2a63; color: #8f7fb8; cursor: default; }
+.empty { color: #cfc3e8; }
+
+.detail-panel {
+  background: #221741; border: 2px solid #ff2e88; border-radius: 12px; padding: 18px; margin-bottom: 16px;
+}
+.detail-panel h2 { margin-top: 0; }
+.flags { font-size: 13px; color: #ffcf9a; }
+.guide-text { font-size: 15px; }
+.sources { font-size: 13px; color: #cfc3e8; }
+.sources a { color: #00e5c0; }
+
+.roadmap { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 12px; }
+.stage { background: #17102b; border: 1px solid #3a2a63; border-radius: 10px; padding: 14px; }
+.stage-time { color: #00e5c0; font-size: 13px; font-weight: 700; margin: 0 0 8px; }
+.stage p { font-size: 14px; color: #e8ddf5; }
+.stage-trophies { list-style: none; padding: 0; margin: 10px 0 0; font-size: 13px; }
+.stage-trophies li { padding: 3px 0; border-top: 1px solid #2c2148; }
+.stage-trophies li.done { color: #00e5c0; }
+.missable-card { display: block; border-color: #ff9a3d; }
+footer { padding: 20px 24px 28px; color: #9d8fc2; font-size: 12px; border-top: 1px solid #2c2148; }

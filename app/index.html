@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide — Leonida Legend Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">Grand Theft Auto VI · PlayStation 5 · Offline guide</p>
+    <h1>Leonida Legend — GTA VI Trophy Guide &amp; Tracker</h1>
+    <p class="lede">All 55 official trophies with their names, descriptions and grades, a guide to each one in our own words with its sources, a roadmap to the platinum, and a tracker that saves your progress in this browser. No account, no network — everything runs from these files.</p>
+  </div>
+  <div class="progress-box">
+    <p id="progress-text">0 of 55 earned — 0% to platinum</p>
+    <div class="progress-bar"><div id="progress-fill"></div></div>
+    <div id="counts" class="counts"></div>
+    <p class="platinum-note">Platinum: Vice Got a Price! · 1 platinum, 2 gold, 6 silver, 46 bronze · 28 hidden · about 200 hours (PowerPyx)</p>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Sections">
+  <button type="button" class="tab active" data-tab="tracker">Tracker</button>
+  <button type="button" class="tab" data-tab="roadmap">Roadmap to Platinum</button>
+  <button type="button" class="tab" data-tab="missable">Missable trophies</button>
+</nav>
+
+<main>
+  <section id="pane-tracker" class="pane active">
+    <div class="controls">
+      <label>Search <input id="search" type="search" placeholder="Trophy name or keyword…"></label>
+      <label>Kind
+        <select id="kind">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="missable">Missable</option>
+          <option value="collectibles">Collectibles</option>
+          <option value="activities">Activities</option>
+          <option value="online">Online</option>
+        </select>
+      </label>
+      <label>Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="check"><input id="earned-only" type="checkbox"> Earned only</label>
+      <label class="check spoiler"><input id="spoiler-toggle" type="checkbox"> Spoiler mode: hide story trophies until earned</label>
+    </div>
+    <div class="actions">
+      <button id="export" type="button">Export progress</button>
+      <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+      <button id="reset" type="button">Clear progress</button>
+      <p class="hint">Tick a trophy to mark it earned — it stays ticked when you reload. Export saves a JSON file; import restores it on any machine.</p>
+    </div>
+    <div id="detail"></div>
+    <div id="list" class="list"></div>
+  </section>
+
+  <section id="pane-roadmap" class="pane">
+    <h2>Roadmap to the platinum</h2>
+    <p class="lede">Built from the official descriptions and PowerPyx's roadmap: story first, side questlines as they open, then activities and robberies, then the 100% checklist. There is no online trophy and no difficulty trophy, and one playthrough is enough.</p>
+  </section>
+
+  <section id="pane-missable" class="pane">
+    <h2>Missable trophies</h2>
+    <p class="lede">Only one trophy is reported as possibly missable. Everything else can be finished after the story in free-roam.</p>
+    <div id="missable-list"></div>
+  </section>
+</main>
+
+<footer>
+  <p>Sources for the trophy list and the guides: PowerPyx's GTA 6 trophy guide, Push Square's trophy guide, GTABase's trophy list, and the Exophase / PSNProfiles trophy lists. Each trophy's guide names its sources beside it. Names, descriptions and grades are as PlayStation publishes them; guide text is written in our own words. This is an unofficial fan guide — no Rockstar Games logo, artwork or game screenshots are used.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
