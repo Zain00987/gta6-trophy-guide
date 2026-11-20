@@ -11,7 +11,8 @@
   <div class="hero-text">
     <p class="eyebrow">Grand Theft Auto VI · PlayStation 5 · Offline guide</p>
     <h1>Leonida Legend — GTA VI Trophy Guide &amp; Tracker</h1>
-    <p class="lede">All 55 official trophies with their names, descriptions and grades, a guide to each one in our own words with its sources, a roadmap to the platinum, and a tracker that saves your progress in this browser. No account, no network — everything runs from these files.</p>
+    <p class="lede">All 55 official trophies with their names, descriptions and grades, a multi-step guide for each one with every step's source cited, a roadmap to the platinum, count trackers for the grind trophies, a missable-trophy grid, and a tracker that saves your progress in this browser. No account, no network — everything runs from these files.</p>
+    <div id="cite-stats" class="cite-stats" aria-label="Citation coverage"></div>
   </div>
   <div class="progress-box">
     <p id="progress-text">0 of 55 earned — 0% to platinum</p>
@@ -25,6 +26,7 @@
   <button type="button" class="tab active" data-tab="tracker">Tracker</button>
   <button type="button" class="tab" data-tab="roadmap">Roadmap to Platinum</button>
   <button type="button" class="tab" data-tab="missable">Missable trophies</button>
+  <button type="button" class="tab" data-tab="sources">Sources</button>
 </nav>
 
 <main>
@@ -57,7 +59,7 @@
       <button id="export" type="button">Export progress</button>
       <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
       <button id="reset" type="button">Clear progress</button>
-      <p class="hint">Tick a trophy to mark it earned — it stays ticked when you reload. Export saves a JSON file; import restores it on any machine.</p>
+      <p class="hint">Tick a trophy to mark it earned — it stays ticked when you reload. Counters (X/Y) track grind progress and are saved too. Export saves a JSON file; import restores it on any machine.</p>
     </div>
     <div id="detail"></div>
     <div id="list" class="list"></div>
@@ -70,13 +72,21 @@
 
   <section id="pane-missable" class="pane">
     <h2>Missable trophies</h2>
-    <p class="lede">Only one trophy is reported as possibly missable. Everything else can be finished after the story in free-roam.</p>
+    <p class="lede">Only one trophy is reported as possibly missable — but several others are locked to a chapter or an unlock, so this page groups every timing warning by chapter and stage. Everything else can be finished after the story in free-roam.</p>
     <div id="missable-list"></div>
+  </section>
+
+  <section id="pane-sources" class="pane">
+    <h2>Sources</h2>
+    <p class="lede">Every guide step names the outlet it comes from. The matrix below is computed live from the guide data: a tick means that outlet is cited on at least one step of that trophy. Guide text is written in our own words; where a source lists a method as unconfirmed, the step says so instead of guessing.</p>
+    <div id="sources-summary"></div>
+    <div id="sources-matrix"></div>
+    <p class="lede">Outlets: <strong>PowerPyx</strong> — GTA 6 trophy guide and roadmap (method details). <strong>Exophase</strong> — trophy list (names, descriptions, grades). <strong>Push Square</strong> — trophy guide and roadmap. <strong>GTABase</strong> — trophy list. The trophy list was also cross-checked against the PSNProfiles trophy list. No other outlets are cited: anything not in these sources is marked unconfirmed, not filled in from elsewhere.</p>
   </section>
 </main>
 
 <footer>
-  <p>Sources for the trophy list and the guides: PowerPyx's GTA 6 trophy guide, Push Square's trophy guide, GTABase's trophy list, and the Exophase / PSNProfiles trophy lists. Each trophy's guide names its sources beside it. Names, descriptions and grades are as PlayStation publishes them; guide text is written in our own words. This is an unofficial fan guide — no Rockstar Games logo, artwork or game screenshots are used.</p>
+  <p>Sources for the trophy list and the guides: PowerPyx's GTA 6 trophy guide, Push Square's trophy guide, GTABase's trophy list, and the Exophase / PSNProfiles trophy lists. Each guide step names its source beside it, and the Sources tab shows the full matrix. Names, descriptions and grades are as PlayStation publishes them; guide text is written in our own words. This is an unofficial fan guide — no Rockstar Games logo, artwork or game screenshots are used.</p>
 </footer>
 <script type="module" src="app.js"></script>
 </body>

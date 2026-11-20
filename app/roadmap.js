@@ -1,6 +1,8 @@
 // The road to the platinum, in the order PowerPyx's roadmap lays it out:
 // story first, then the 100% checklist, then strangers and cleanup.
 // Counts and chapter facts come from the official trophy descriptions.
+// Round 2: each stage card now shows how many of its trophies you have
+// earned, so the roadmap doubles as a progress view.
 export const ROADMAP = [
   {
     stage: "Stage 1 — Play the story (60–80 hours)",
@@ -60,6 +62,13 @@ export function renderRoadmap(trophies, earned) {
     when.textContent = step.time;
     const body = document.createElement("p");
     body.textContent = step.text;
+    const done = step.trophyIds.filter((id) => {
+      const t = byId.get(id);
+      return t && earned.has(t.name);
+    }).length;
+    const progress = document.createElement("p");
+    progress.className = "stage-time";
+    progress.textContent = done + " of " + step.trophyIds.length + " earned in this stage";
     const list = document.createElement("ul");
     list.className = "stage-trophies";
     for (const id of step.trophyIds) {
@@ -70,7 +79,7 @@ export function renderRoadmap(trophies, earned) {
       if (earned.has(t.name)) li.className = "done";
       list.append(li);
     }
-    card.append(head, when, body, list);
+    card.append(head, when, body, progress, list);
     wrap.append(card);
   }
   return wrap;
