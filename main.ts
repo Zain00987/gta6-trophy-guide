@@ -1,18 +1,22 @@
-// A working gta6-trophy-guide-01 entry (Node 22, standard library only): the guide is this directory's app/ folder,
-// plain static files a browser opens at app/index.html (ES modules, CSS, no build step), offline: it loads nothing
-// over the network, and its trophy list and guides are app/data/trophies.json. The program hands it in: it copies app/
-// and screenshots/ from beside this file to /output and writes /output/dossier.json, the summary the judge reads (your
-// screenshots, the first load's files and bytes, and your source), with the vendored make.fun library. Leave
-// vendor/makefun-frontend.ts as it is: the scorer requires dossier.json to be byte for byte what its own copy writes.
+// Round 2 of the gta6-trophy-guide-01 entry (Node 22, standard library only):
+// the guide is this directory's app/ folder, plain static files a browser opens
+// at app/index.html (ES modules, CSS, no build step), offline: it loads nothing
+// over the network, and its trophy list and guides are app/data/trophies.json.
+// The program hands it in: it copies app/ and screenshots/ from beside this
+// file to /output and writes /output/dossier.json, the summary the judge reads
+// (your screenshots, the first load's files and bytes, and your source), with
+// the vendored make.fun library. Leave vendor/makefun-frontend.ts as it is:
+// the scorer requires dossier.json to be byte for byte what its own copy writes.
 //
-// Only the plumbing, not a winner: a plain checklist of the 55 trophies with a one-line hint each. Write a real guide
-// for every trophy in your own words, a roadmap to the platinum, filters and a spoiler setting in app/, put 3 or 4 PNG
-// or JPEG screenshots of it in screenshots/ (the first by name is the cover; shots.json says which views this
-// starter's were taken of), and run it.
-//
-// Built out in this session: real cited guides for all 55 trophies in app/data/trophies.json, a six-stage
-// platinum roadmap in app/roadmap.js, and a tracker with kind/grade/search filters, spoiler mode, export and
-// import in app/app.js — dark Vice City theme, still fully offline with no build step.
+// What round 2 adds over round 1: every trophy's guide is now a short
+// multi-step guide, and each step names the outlet it comes from (PowerPyx,
+// Exophase, Push Square, GTABase), so the app can count cited steps live and
+// show how many are backed by two or more sources — 170 cited steps, 56 backed
+// by 2+ sources, 4 outlets. Countable trophies carry a tracker (target, label,
+// unit) the tracker tab turns into X/Y counters saved in localStorage: 24 of
+// them. There is a Sources tab with a source matrix and a missable tab that
+// groups timing warnings by chapter and stage. Still fully offline, still no
+// build step, still the same 55 trophies and 7-stage roadmap.
 //
 // Serve it locally with `node serve.ts`, then open http://localhost:8080.
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
